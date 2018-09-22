@@ -63,11 +63,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.caucho</groupId>
-			<artifactId>hessian</artifactId>
-			<version>${hessian.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.mysema.querydsl</groupId>
 			<artifactId>querydsl-core</artifactId>
 			<version>${querydsl.version}</version>
@@ -112,7 +107,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.0.4.RELEASE</version>
 			    <configuration>
-			        <mainClass>com.s3s.ssm.config.ApplicationConfig</mainClass>
+			        <mainClass>com.s3s.ssm.data.SSMDataLoader</mainClass>
 			    </configuration>
 			    <executions>
 			        <execution>

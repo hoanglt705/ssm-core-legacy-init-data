@@ -32,7 +32,7 @@ public class ApplicationConfig {
 	
 	@Bean
 	public DataSource dataSource() {
-		return DataSourceBuilder.create().url("jdbc:mysql://localhost:3306/ssm-db?useSSL=false")
+		return DataSourceBuilder.create().url("jdbc:mysql://db:3306/ssm-db?useSSL=false")
 				.driverClassName("com.mysql.jdbc.Driver").username("root").password("rootpass").build();
 	}
   public static void main(String[] args) {
