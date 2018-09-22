@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.s3s.ssm</groupId>
-	<artifactId>ssm-core-legacy</artifactId>
+	<artifactId>ssm-core-legacy-init-data</artifactId>
 	<version>1.1</version>
-	<name>SSM Core Legacy Service</name>
-	<description>SSM Core Legacy Service</description>
+	<name>SSM Core Legacy Service Init Data</name>
+	<description>Helps to init data for SSM Core Legacy Service</description>
 	<packaging>jar</packaging>
 	
 	<properties>
