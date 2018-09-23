@@ -26,17 +26,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaRepositories(basePackages = "com.s3s.ssm.repo")
-@EntityScan({"com.sunrise.xdoc.entity", "com.s3s.ssm.security.entity"})
+@EntityScan({ "com.sunrise.xdoc.entity", "com.s3s.ssm.security.entity" })
 @SpringBootApplication
 public class ApplicationConfig {
-	
+
 	@Bean
 	public DataSource dataSource() {
-		return DataSourceBuilder.create().url("jdbc:mysql://db:3306/ssm-db?useSSL=false")
+		return DataSourceBuilder.create()
+				.url("jdbc:mysql://db:3306/ssm-db?useSSL=false&useUnicode=yes&amp;characterEncoding=UTF-8")
 				.driverClassName("com.mysql.jdbc.Driver").username("root").password("rootpass").build();
 	}
-  public static void main(String[] args) {
-	  SpringApplication.run(ApplicationConfig.class, args);
-  }
+
+	public static void main(String[] args) {
+		SpringApplication.run(ApplicationConfig.class, args);
+	}
 
 }
